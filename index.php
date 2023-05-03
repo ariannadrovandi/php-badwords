@@ -10,7 +10,7 @@
 <body class="bg-primary-subtle d-flex align-items-center justify-content-center p-5">
     <div class="w-75 d-flex align-items-center justify-content-center flex-column">
         <h1 class="fs-1">BadWords</h1>
-        <form class="container mt-5 mx-auto" action="./pages/censoredWords.php">
+        <form class="container mt-5 mx-auto" action="./page/censoredWords.php">
             <label class="form-label mt-3 text-primary" for="paragraph">Inserisci il paragrafo</label>
             <input class="form-control w-75" type="text" name="paragraph" id="paragraph" placeholder="Inserisci il paragrafo">
             <label class="form-label mt-3 text-primary" for="badWord">Inserisci la parola da censurare</label>
