@@ -11,8 +11,10 @@
     <div class="w-75 d-flex align-items-center justify-content-center flex-column">
         <h1 class="fs-1">BadWords</h1>
         <form class="container mt-5 mx-auto" action="./page/censoredWords.php">
-            <label class="form-label mt-3 text-primary" for="paragraph">Inserisci il paragrafo</label>
-            <input class="form-control w-75" type="text" name="paragraph" id="paragraph" placeholder="Inserisci il paragrafo">
+            <div class="d-flex flex-column">
+                <label class="form-label mt-3 text-primary" for="paragraph">Inserisci il paragrafo</label>
+                <textarea class="mt-3 text-primary w-75" name="paragraph" id="paragraph" cols="30" rows="10" placeholder="Inserisci il paragrafo"></textarea>
+            </div>
             <label class="form-label mt-3 text-primary" for="badWord">Inserisci la parola da censurare</label>
             <input class="form-control w-50 border bg-danger-subtle text-danger" type="text" name="badWord" id="badWord" placeholder="Inserisci la parola da censurare">
             <input class="btn mt-3 btn-primary" type="submit" value="Invia">
