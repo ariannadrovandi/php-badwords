@@ -14,14 +14,24 @@ $censoredWord = str_replace($badWord, "***", $paragraph);
 </head>
 <body>
     <div>
+        <h2 class="text-primary"> Il paragrafo originale è lungo:
+            <?php 
+                echo ' '.strlen($paragraph)
+            ?>
+        </h2>
         <p>
             <?php 
-                echo $paragraph. '. Numero di caratteri nel paragrafo: '.strlen($paragraph)
+                echo ' '.$paragraph
             ?>
         </p>
+        <h2> Il nuovo paragrafo è lungo:
+            <?php 
+                echo ''.strlen($censoredWord)
+            ?>
+        </h2>
         <p>
             <?php 
-                echo $censoredWord. '. Numero di caratteri nel paragrafo: '.strlen($censoredWord)
+                echo ' '.$censoredWord 
             ?>
         </p>
     </div>
